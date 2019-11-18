@@ -8,7 +8,7 @@ side information named SeedGenerator (SeGen) algorithm. SeGen is an adaptation t
 1-dimensional test for graphs (also known as Naive Vertex Refinement).
 
 
-
+<br/>
 
 
 # Background
@@ -19,7 +19,7 @@ specifically, the algorithm can find shared users between two networks, which ha
 ![](ns_step.png)
 
 
-
+<br/>
 
 
 # Motivation
@@ -30,7 +30,7 @@ knowledge can be demanding and often requires the human factor. An automatic sys
 possible difficulties.
 
 
-
+<br/>
 
 
 # Citation
