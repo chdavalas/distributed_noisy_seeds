@@ -9,6 +9,8 @@ side information named SeedGenerator (SeGen) algorithm. SeGen is an adaptation t
 
 
 
+
+
 # Background
 The NoisySeeds is a Percolation Graph Matching (PGM) algorithm. PGM algorithm have been made with the purpose of acquiring an 
 approximate solution to the graph matching problem. A common use of these algorithms is Network de-anonymization. More 
@@ -18,12 +20,16 @@ specifically, the algorithm can find shared users between two networks, which ha
 
 
 
+
+
 # Motivation
 * Graph data which represent social netowrks are massive therefore the computations required from percolation graph matching can become prohibitive even for contemporary hardware.
 
 * A PGM algorithm will require an initial set of pre-acquired connections (named seeds). The problem is that finding a priori 
 knowledge can be demanding and often requires the human factor. An automatic system for finding initial knowledge can eliminate all 
 possible difficulties.
+
+
 
 
 
