@@ -33,5 +33,19 @@ possible difficulties.
 <br/>
 
 
+# Instructions
+--clone project--
+--change directory to project folder--
+sudo apt-get install python3-pip
+pip3 install virtualenv
+which python3
+virtualenv -p -python dir- env
+source env/bin/activate
+pip3 install -r requirements.txt
+
+
+<br/>
+
+
 # Citation
 --Forthcoming--
