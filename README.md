@@ -1,4 +1,4 @@
-# distributed_noisy_seeds
+# Distributed NoisySeeds
 
 A map-reduce implementation of the NoisySeeds algorithm as described in the paper of kazemi et al. "Growing a graph from a handful 
 of seeds". The Distributed NoisySeeds (DiNoiSe) algorithm works upon a cluster of commodity hardware algorithm whilst following 
@@ -17,4 +17,4 @@ The NoisySeeds is a Percolation Graph Matching (PGM) algorithm. PGM algorithm ha
 
 
 # Motivation
-1.Graph data which represent social netowrks are massive therefore the computations required from percolation graph matching can become prohibitive even for contemporary hardware.  
+* Graph data which represent social netowrks are massive therefore the computations required from percolation graph matching can become prohibitive even for contemporary hardware.  
