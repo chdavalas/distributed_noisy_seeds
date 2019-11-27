@@ -34,15 +34,38 @@ possible difficulties.
 
 
 # Instructions
---clone project--<br/>
---change directory to project folder--<br/>
-sudo apt-get install python3-pip<br/>
-pip3 install virtualenv<br/>
-which python3<br/>
-virtualenv -p -python dir- env<br/>
-source env/bin/activate<br/>
-pip3 install -r requirements.txt<br/>
+*Set environment<br/>
 
+You can use the dinoise algorithm with the help of an isolated instance of python3
+
+  *clone project<br/>
+  git clone https://github.com/chdavalas/distributed_noisy_seeds.git<br/>
+  
+  *change directory to project folder<br/>
+  cd [parent/directory]/distributed_noisy_seeds
+  
+  *ensure python-pip has been installed<br/>
+  sudo apt-get install python3-pip<br/>
+  
+  *ensure virtualenv has been installed<br/>
+  pip3 install virtualenv<br/>
+  
+  *create new python3 environment with virtualenv<br/>
+  which python3<br/>
+  virtualenv -p -python dir- env<br/>
+
+  *activate environment
+  source env/bin/activate<br/>
+  
+  *install suggested requirements and check if properly installed<br/>
+  pip3 install -r requirements.txt<br/>
+  pip3 freeze
+
+
+*run tests<br/>
+
+*make testing script executable<br/>
+chmod +x run_test_data<br/>
 
 <br/>
 
