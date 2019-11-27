@@ -1,4 +1,4 @@
-# Distributed NoisySeeds
+### Distributed NoisySeeds ###
 A map-reduce implementation of the NoisySeeds algorithm as described in the paper of kazemi et al. "Growing a graph from a handful 
 of seeds". The Distributed NoisySeeds (DiNoiSe) algorithm works upon a cluster of commodity hardware algorithm whilst following 
 the same logic as the original NoisySeeds algorithm. This implementation is written in PySpark (Python API for Apache Spark).
@@ -11,7 +11,7 @@ side information named SeedGenerator (SeGen) algorithm. SeGen is an adaptation t
 <br/>
 
 
-# Background
+### Background ###
 The NoisySeeds is a Percolation Graph Matching (PGM) algorithm. PGM algorithm have been made with the purpose of acquiring an 
 approximate solution to the graph matching problem. A common use of these algorithms is Network de-anonymization. More 
 specifically, the algorithm can find shared users between two networks, which have been anonymized.
@@ -22,7 +22,7 @@ specifically, the algorithm can find shared users between two networks, which ha
 <br/>
 
 
-# Motivation
+### Motivation ###
 * Graph data which represent social netowrks are massive therefore the computations required from percolation graph matching can become prohibitive even for contemporary hardware.
 
 * A PGM algorithm will require an initial set of pre-acquired connections (named seeds). The problem is that finding a priori 
@@ -33,13 +33,12 @@ possible difficulties.
 <br/>
 
 
-# Instructions
-*Set environment<br/>
+### Instructions ###
+# Set environment #
 
 You can use the dinoise algorithm with the help of an isolated instance of python3
 
-  * clone project<br/>
-  git clone https://github.com/chdavalas/distributed_noisy_seeds.git<br/>
+  * clone project git clone https://github.com/chdavalas/distributed_noisy_seeds.git<br/>
   
   * change directory to project folder<br/>
   cd [parent/directory]/distributed_noisy_seeds<br/>
@@ -62,7 +61,7 @@ You can use the dinoise algorithm with the help of an isolated instance of pytho
   pip3 freeze<br/>
 
 
-* run tests<br/>
+# Run tests #
 
 * make testing script executable<br/>
 chmod +x run_test_data<br/>
