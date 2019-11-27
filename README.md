@@ -34,9 +34,9 @@ possible difficulties.
 
 
 ### Instructions ###
-1. Set the python environment
-
 You can use the dinoise algorithm with the help of an isolated instance of python3
+
+1. Set the python environment
 
   * __clone project__<br/> git clone https://github.com/chdavalas/distributed_noisy_seeds.git<br/>
   
@@ -55,7 +55,7 @@ You can use the dinoise algorithm with the help of an isolated instance of pytho
 
 2. Run tests
 
-* __make testing script executable__<br/> chmod +x run_test_data<br/>
+  * __make testing script executable__<br/> chmod +x run_test_data<br/>
 
 <br/>
 
