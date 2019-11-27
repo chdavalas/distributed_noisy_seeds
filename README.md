@@ -40,26 +40,26 @@ You can use the dinoise algorithm with the help of an isolated instance of pytho
  
  <summary>#### Set the python environment ####</summary>
 
-  * clone project <br/>__git clone https://github.com/chdavalas/distributed_noisy_seeds.git__<br/>
+  * 'clone project' <br/>__git clone https://github.com/chdavalas/distributed_noisy_seeds.git__<br/>
   
-  * change directory to project folder <br/>__cd [parent/directory]/distributed_noisy_seeds__<br/>
+  * 'change directory to project folder' <br/>__cd [parent/directory]/distributed_noisy_seeds__<br/>
   
-  * ensure python-pip has been installed <br/>__sudo apt-get install python3-pip__<br/>
+  * 'ensure python-pip has been installed' <br/>__sudo apt-get install python3-pip__<br/>
   
-  * ensure virtualenv has been installed <br/>__pip3 install virtualenv__<br/>
+  * 'ensure virtualenv has been installed' <br/>__pip3 install virtualenv__<br/>
   
-  * create new python3 environment with virtualenv <br/>__which python3; virtualenv -p {python3 dir} env__<br/>
+  * 'create new python3 environment with virtualenv' <br/>__which python3; virtualenv -p {python3 dir} env__<br/>
 
-  * activate environment <br/>__source env/bin/activate__<br/>
+  * 'activate environment' <br/>__source env/bin/activate__<br/>
   
-  * install suggested requirements and check if properly installed <br/ __pip3 install -r requirements.txt; pip3 freeze__<br/>
+  * 'install suggested requirements and check if properly installed' <br/ __pip3 install -r requirements.txt; pip3 freeze__<br/>
 
 </details>
 
 
 2. Run tests
 
-  * make testing script executable<br/> __chmod +x run_test_data__<br/>
+  * 'make testing script executable' <br/> __chmod +x run_test_data__<br/>
 
 <br/>
 
