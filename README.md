@@ -40,25 +40,25 @@ You can use the dinoise algorithm with the help of an isolated instance of pytho
  
  <summary>Set the python environment</summary>
 
-  * clone project` git clone https://github.com/chdavalas/distributed_noisy_seeds.git`<br/>
+  * clone project `git clone https://github.com/chdavalas/distributed_noisy_seeds.git`<br/>
   
   
-  * change directory to project folder` cd parent/directory/distributed_noisy_seeds`<br/>
+  * change directory to project folder `cd parent/directory/distributed_noisy_seeds`<br/>
   
   
-  * ensure python-pip has been installed` sudo apt-get install python3-pip`<br/>
+  * ensure python-pip has been installed `sudo apt-get install python3-pip`<br/>
   
   
-  * ensure virtualenv has been installed` pip3 install virtualenv<br/>`
+  * ensure virtualenv has been installed `pip3 install virtualenv<br/>`
   
   
-  * create new python3 environment with virtualenv` which python3; virtualenv -p {python3 dir} env`<br/>
+  * create new python3 environment with virtualenv `which python3; virtualenv -p {python3 dir} env`<br/>
 
 
-  * activate environment` source env/bin/activate`<br/>
+  * activate environment `source env/bin/activate`<br/>
   
   
-  * install suggested requirements and check if properly installed` pip3 install -r requirements.txt; pip3 freeze`<br/>
+  * install suggested requirements and check if properly installed `pip3 install -r requirements.txt; pip3 freeze`<br/>
 
 </details>
 
@@ -66,16 +66,16 @@ You can use the dinoise algorithm with the help of an isolated instance of pytho
 <details>
  <summary>Run tests</summary>
   
-  * run testing script (options) 
-  ```spark-submit --master local[*] testing_script.py
-                --input /test_data/[graph_input]/G1/{*.gz} /test_data/[graph_input]/G2/{*.gz}
-                --input_seeds /test/data/[graph_input]/seeds/{*.gz}
-                --bucketing (default is no bucketing else set to 1)
-                --seeds (use the DiNoiSe algorithm by setting the number of seeds you wish. Note that you should not use the     
-                "--input seeds" argument)
-                 --parts (Apache Spark partitions)
+  * run testing script
+  ```
+  spark-submit --master local[*] testing_script.py \
+               --input /test_data/[graph]/G1/{part-*.gz} /test_data/[graph]/G2/{part-*.gz} \
+               --input_seeds /test/data/[graph]/seeds/{*.gz} \
+               --bucketing (use the flag if you want to use DiNoiSe with bucketing) \
+               --seeds (use the DiNoiSe algorithm by setting the number of seeds you wish. Note that in this case, you should not use the "--input seeds" argument) \
+               --parts (Apache Spark partitions)
    ```
-  
+  * Use your own data 
   
   
 </details>
