@@ -36,7 +36,7 @@ possible difficulties.
 ### Instructions ###
 You can use the dinoise algorithm with the help of an isolated instance of python3
 
-<details><summary>#### Set the python environment ####<summary></details>
+<details><summary>#### Set the python environment ####</summary></details>
 
   * clone project <br/>__git clone https://github.com/chdavalas/distributed_noisy_seeds.git__<br/>
   
