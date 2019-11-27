@@ -42,7 +42,7 @@ You can use the dinoise algorithm with the help of an isolated instance of pytho
   git clone https://github.com/chdavalas/distributed_noisy_seeds.git<br/>
   
   * change directory to project folder<br/>
-  cd [parent/directory]/distributed_noisy_seeds
+  cd [parent/directory]/distributed_noisy_seeds<br/>
   
   * ensure python-pip has been installed<br/>
   sudo apt-get install python3-pip<br/>
@@ -54,12 +54,12 @@ You can use the dinoise algorithm with the help of an isolated instance of pytho
   which python3<br/>
   virtualenv -p -python dir- env<br/>
 
-  * activate environment
+  * activate environment<br/>
   source env/bin/activate<br/>
   
   * install suggested requirements and check if properly installed<br/>
   pip3 install -r requirements.txt<br/>
-  pip3 freeze
+  pip3 freeze<br/>
 
 
 * run tests<br/>
