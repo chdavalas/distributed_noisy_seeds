@@ -38,19 +38,19 @@ You can use the dinoise algorithm with the help of an isolated instance of pytho
 
 1. Set the python environment
 
-  * __clone project__<br/> git clone https://github.com/chdavalas/distributed_noisy_seeds.git<br/>
+  * clone project git clone __https://github.com/chdavalas/distributed_noisy_seeds.git__<br/>
   
-  * __change directory to project folder__<br/> cd [parent/directory]/distributed_noisy_seeds<br/>
+  * change directory to project folder __cd [parent/directory]/distributed_noisy_seeds__<br/>
   
-  * __ensure python-pip has been installed__<br/> sudo apt-get install python3-pip<br/>
+  * ensure python-pip has been installed __sudo apt-get install python3-pip__<br/>
   
-  * __ensure virtualenv has been installed__<br/> pip3 install virtualenv<br/>
+  * ensure virtualenv has been installed __pip3 install virtualenv__<br/>
   
-  * __create new python3 environment with virtualenv__<br/> which python3; virtualenv -p -python dir- env<br/>
+  * create new python3 environment with virtualenv __which python3; virtualenv -p {python3 dir} env__<br/>
 
-  * __activate environment source__<br/> env/bin/activate<br/>
+  * activate environment __source env/bin/activate__<br/>
   
-  * __install suggested requirements and check if properly installed__<br/> pip3 install -r requirements.txt; pip3 freeze<br/>
+  * install suggested requirements and check if properly installed __pip3 install -r requirements.txt; pip3 freeze__<br/>
 
 
 2. Run tests
