@@ -36,7 +36,9 @@ possible difficulties.
 ### Instructions ###
 You can use the dinoise algorithm with the help of an isolated instance of python3
 
-<details><summary>#### Set the python environment ####</summary></details>
+<details>
+ 
+ <summary>#### Set the python environment ####</summary>
 
   * clone project <br/>__git clone https://github.com/chdavalas/distributed_noisy_seeds.git__<br/>
   
@@ -51,6 +53,8 @@ You can use the dinoise algorithm with the help of an isolated instance of pytho
   * activate environment <br/>__source env/bin/activate__<br/>
   
   * install suggested requirements and check if properly installed <br/ __pip3 install -r requirements.txt; pip3 freeze__<br/>
+
+</details>
 
 
 2. Run tests
