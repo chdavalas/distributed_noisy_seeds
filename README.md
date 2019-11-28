@@ -52,7 +52,7 @@ You can use the dinoise algorithm with the help of an isolated instance of pytho
   * ensure virtualenv has been installed `pip3 install virtualenv`<br/>
   
   
-  * create new python3 environment with virtualenv `which python3; virtualenv -p {my/python3/directory} {environment_name}`<br/>
+  * create new python3 environment `which python3; virtualenv -p {my/python3/directory} {environment_name}`<br/>
 
 
   * activate environment `source {environment_name}/bin/activate`<br/>
@@ -108,6 +108,7 @@ You can use the dinoise algorithm with the help of an isolated instance of pytho
    ```
 </details>
 
+<br/>
 
 ### Citation ### 
 Thanks in advance for citing us :)
