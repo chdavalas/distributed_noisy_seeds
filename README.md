@@ -86,7 +86,7 @@ Therefore DiNoiSe can be used only for social networks which define a mutual rel
                --input /test_data/{graph_name}/G1/{part-*.gz} /test_data/{graph_name}/G2/{part-*.gz} \
                --input_seeds /test_data/{graph_name}/seeds/{*.gz} \
                --bucketing (use the flag if you want to use DiNoiSe with bucketing) \
-               --seeds (use the SeGen algorithm by setting the number of seeds you wish. Note that in this case, you should NOT use the "--input seeds" argument) \
+               --seeds (how many seeds to generate, you should NOT use the "--input seeds" argument) \
                --parts (Apache Spark partitions)
    ```
    
@@ -107,7 +107,7 @@ Therefore DiNoiSe can be used only for social networks which define a mutual rel
                --input {my/graph1/dir} {my/graph2/dir} \
                --input_seeds {my/seeds/dir} \
                --output_dir {my/output/dir}\
-               --seeds (use the SeGen algorithm by setting the number of seeds you wish. Note that in this case, you should NOT use the "--input seeds" argument) \
+               --seeds (how many seeds to generate, you should NOT use the "--input seeds" argument) \
                --parts (Apache Spark partitions)
    ```
 
