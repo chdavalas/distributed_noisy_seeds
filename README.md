@@ -59,7 +59,7 @@ You can use the dinoise algorithm with the help of an isolated instance of pytho
 
 
 <details>
- <summary>Run tests</summary>
+ <summary>Test the algoirithm</summary>
   
   * extract ```test_data.zip``` 
   
@@ -76,11 +76,13 @@ You can use the dinoise algorithm with the help of an isolated instance of pytho
    ```
    cat results_log.csv; cat seeds_log.csv
    ```
+   The results are in .csv form {name|time elapsed|coverage|accuracy|recall|F-score}
+   
 </details>
 
 
 <details>
- <summary>Run DiNoiSe with you own data</summary>
+ <summary>Use DiNoiSe for finding matchings</summary>
   
   * Run DiNoiSe
   ```
