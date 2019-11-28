@@ -61,6 +61,8 @@ You can use the dinoise algorithm with the help of an isolated instance of pytho
 <details>
  <summary>Run tests</summary>
   
+  * extract the data 
+  
   * run testing script and check data
   ```
   spark-submit --master local[*] testing_script.py \
