@@ -61,7 +61,7 @@ You can use the dinoise algorithm with the help of an isolated instance of pytho
 <details>
  <summary>Test the algoirithm</summary>
   
-  * extract ```test_data.zip``` <br\>(Note that the majority of PGM algorithms work only for undirected graphs)
+  * extract ```test_data.zip``` <br/>(Note that the majority of PGM algorithms work only for undirected graphs)
   
   * run testing script and check data
   ```
