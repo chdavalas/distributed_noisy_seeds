@@ -108,6 +108,8 @@ You can use the dinoise algorithm with the help of an isolated instance of pytho
    ```
    head; my/output/dir/{seeded_matching OR seedless_mathcing}/part-* 
    ```
+</details>
 
-# Citation
+
+# Citation (Thanks in advance for citing us :) )
 --Forthcoming--
