@@ -15,7 +15,6 @@ For a more detailed description please read our paper:
 ``` 
 Graph matching on social networks without any side information. 
 Charalampos Davalas, Dimitrios Michail, Iraklis Varlamis
-<br/>
 ```
 
 
