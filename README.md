@@ -1,6 +1,6 @@
 ### Distributed NoisySeeds ###
 
-> "Graph matching on social networks without any side information" Charalampos Davalas, Dimitrios Michail, Iraklis Varlamis
+Graph matching on social networks without any side information, Charalampos Davalas, Dimitrios Michail, Iraklis Varlamis
 <br/>
 
 A map-reduce implementation of the NoisySeeds algorithm as described in the paper of kazemi et al. "Growing a graph from a handful 
