@@ -35,11 +35,11 @@ possible difficulties.
 
 
 ### Instructions ###
-You can use the dinoise algorithm with the help of an isolated instance of python3
+You can use the dinoise algorithm with the help of an isolated instance of python3, the algorithm has been written by using the Python API of Apache Spark (Pyspark)
 
 <details>
  
- <summary>Set the python environment</summary>
+ <summary>Installation</summary>
 
   * clone project `git clone https://github.com/chdavalas/distributed_noisy_seeds.git`<br/>
   
