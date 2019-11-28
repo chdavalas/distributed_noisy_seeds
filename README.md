@@ -12,12 +12,12 @@ side information named SeedGenerator (SeGen) algorithm. SeGen is an adaptation t
 
 For a more detailed description please read our paper:
 <br/>
+
 ``` 
-Graph matching on social networks without any side information. 
-Charalampos Davalas, Dimitrios Michail, Iraklis Varlamis
+Graph matching on social networks without any side information
+
+Charalampos Davalas, Dimitrios Michail, Iraklis Varlamis.
 ```
-
-
 <br/>
 
 
