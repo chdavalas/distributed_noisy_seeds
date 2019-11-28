@@ -81,8 +81,6 @@ You can use the dinoise algorithm with the help of an isolated instance of pytho
    ```
 </details>
 
-<br/>
-
 <details>
  <summary>Run DiNoiSe with you own data</summary>
   
@@ -111,5 +109,5 @@ You can use the dinoise algorithm with the help of an isolated instance of pytho
 </details>
 
 
-### Citation ###(Thanks in advance for citing us :) )
+### Citation ### (Thanks in advance for citing us :) )
 --Forthcoming--
