@@ -7,6 +7,7 @@ An addition to this implementation is an experimental seed generation algorithm 
 side information named SeedGenerator (SeGen) algorithm. SeGen is an adaptation to the Weisfeiler-Lehman graph isomorphism 
 1-dimensional test for graphs (also known as Naive Vertex Refinement).
 
+For a more detailed description please read our paper
 
 <br/>
 
@@ -42,21 +43,15 @@ You can use the dinoise algorithm with the help of an isolated instance of pytho
 
   * clone project `git clone https://github.com/chdavalas/distributed_noisy_seeds.git`<br/>
   
-  
   * change directory to project folder `cd my/projects/directory/distributed_noisy_seeds`<br/>
-  
   
   * ensure python-pip has been installed `sudo apt-get install python3-pip`<br/>
   
-  
   * ensure virtualenv has been installed `pip3 install virtualenv`<br/>
   
-  
   * create new python3 environment `which python3; virtualenv -p {my/python3/directory} {environment_name}`<br/>
-
-
-  * activate environment `source {environment_name}/bin/activate`<br/>
   
+  * activate environment `source {environment_name}/bin/activate`<br/>
   
   * install suggested requirements and check if properly installed `pip3 install -r requirements.txt; pip3 freeze`<br/>
 
@@ -80,6 +75,7 @@ You can use the dinoise algorithm with the help of an isolated instance of pytho
    cat results_log.csv; cat seeds_log.csv
    ```
 </details>
+
 
 <details>
  <summary>Run DiNoiSe with you own data</summary>
@@ -107,6 +103,7 @@ You can use the dinoise algorithm with the help of an isolated instance of pytho
    head my/output/dir/{seeded_matching OR seedless_mathcing}/part-* 
    ```
 </details>
+
 
 <br/>
 
