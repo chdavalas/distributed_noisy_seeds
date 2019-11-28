@@ -1,4 +1,8 @@
 ### Distributed NoisySeeds ###
+
+> "Graph matching on social networks without any side information" Charalampos Davalas, Dimitrios Michail, Iraklis Varlamis
+<br/>
+
 A map-reduce implementation of the NoisySeeds algorithm as described in the paper of kazemi et al. "Growing a graph from a handful 
 of seeds". The Distributed NoisySeeds (DiNoiSe) algorithm works upon a cluster of commodity hardware algorithm whilst following 
 the same logic as the original NoisySeeds algorithm. This implementation is written in PySpark (Python API for Apache Spark).
@@ -8,6 +12,7 @@ side information named SeedGenerator (SeGen) algorithm. SeGen is an adaptation t
 1-dimensional test for graphs (also known as Naive Vertex Refinement).
 
 For a more detailed description please read our paper
+
 
 <br/>
 
@@ -35,7 +40,10 @@ possible difficulties.
 
 
 ### Instructions ###
-You can use the dinoise algorithm with the help of an isolated instance of python3, the algorithm has been written by using the Python API of Apache Spark (Pyspark)
+You can use the DiNoiSe algorithm with the help of an isolated instance of python3, the algorithm has been written by using the Python API of Apache Spark (Pyspark)
+
+Note that this algorithm works only for undirected graphs (and so does the majority of PGM algorithms).
+Therefore DiNoiSe can be used only for social networks which define a mutual relationship between nodes/users (Facebook friends) rather than a one-way relationship (Twitter followers).
 
 <details>
  
@@ -61,7 +69,7 @@ You can use the dinoise algorithm with the help of an isolated instance of pytho
 <details>
  <summary>Test the algoirithm</summary>
   
-  * extract ```test_data.zip``` <br/>(Note that the majority of PGM algorithms work only for undirected graphs)
+  * extract ```test_data.zip```
   
   * run testing script and check data
   ```
