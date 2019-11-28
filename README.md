@@ -61,7 +61,7 @@ You can use the dinoise algorithm with the help of an isolated instance of pytho
 <details>
  <summary>Run tests</summary>
   
-  * extract the data 
+  * extract ```test_data.zip``` 
   
   * run testing script and check data
   ```
