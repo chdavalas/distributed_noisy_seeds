@@ -11,6 +11,7 @@ side information named SeedGenerator (SeGen) algorithm. SeGen is an adaptation t
 1-dimensional test for graphs (also known as Naive Vertex Refinement).
 
 For a more detailed description please read our paper:
+
 <br/>
 
 ``` 
@@ -18,6 +19,7 @@ Graph matching on social networks without any side information
 
 Charalampos Davalas, Dimitrios Michail, Iraklis Varlamis.
 ```
+
 <br/>
 
 
