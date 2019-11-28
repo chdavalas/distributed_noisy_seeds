@@ -78,10 +78,13 @@ Therefore DiNoiSe can be used only for social networks which define a mutual rel
   * extract ```test_data.zip```
   
   * run testing script and check data
+  
+  The test_data offers a small set of test graphs with a predifined amount of node overlap
+  
   ```
   spark-submit --master local[*] testing_script.py \
-               --input /test_data/[graph]/G1/{part-*.gz} /test_data/[graph]/G2/{part-*.gz} \
-               --input_seeds /test/data/[graph]/seeds/{*.gz} \
+               --input /test_data/{graph_name}/G1/{part-*.gz} /test_data/{graph_name}/G2/{part-*.gz} \
+               --input_seeds /test_data/{graph_name}/seeds/{*.gz} \
                --bucketing (use the flag if you want to use DiNoiSe with bucketing) \
                --seeds (use the SeGen algorithm by setting the number of seeds you wish. Note that in this case, you should NOT use the "--input seeds" argument) \
                --parts (Apache Spark partitions)
