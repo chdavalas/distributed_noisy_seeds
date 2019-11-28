@@ -79,7 +79,7 @@ Therefore DiNoiSe can be used only for social networks which define a mutual rel
   
   * run testing script and check data
   
-  The test_data offers a small set of test graphs with a predifined amount of node overlap
+  The test_data offers a small set of test graphs with a predifined amount of edge overlap
   
   ```
   spark-submit --master local[*] testing_script.py \
