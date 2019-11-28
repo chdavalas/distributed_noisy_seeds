@@ -13,7 +13,7 @@ For a more detailed description please read our paper
 
 
 ### Background ###
-The NoisySeeds is a Percolation Graph Matching (PGM) algorithm. PGM algorithm have been made with the purpose of acquiring an 
+The NoisySeeds is a Percolation Graph Matching (PGM) algorithm. PGM algorithms have been made with the purpose of acquiring an 
 approximate solution to the graph matching problem. A common use of these algorithms is Network de-anonymization. More 
 specifically, the algorithm can find shared users between two networks, which have been anonymized.
 
@@ -61,7 +61,7 @@ You can use the dinoise algorithm with the help of an isolated instance of pytho
 <details>
  <summary>Test the algoirithm</summary>
   
-  * extract ```test_data.zip``` 
+  * extract ```test_data.zip``` <br\>(Note that the majority of PGM algorithms work only for undirected graphs)
   
   * run testing script and check data
   ```
