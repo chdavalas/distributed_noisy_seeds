@@ -85,7 +85,7 @@ Therefore DiNoiSe can be used only for social networks which define a mutual rel
   spark-submit --master local[*] testing_script.py \
                --input /test_data/{graph_name}/G1/{part-*.gz} /test_data/{graph_name}/G2/{part-*.gz} \
                --input_seeds /test_data/{graph_name}/seeds/{*.gz} \
-               --bucketing (use the flag if you want to use DiNoiSe with bucketing) \
+               --bucketing (optional:use this flag if you want to use DiNoiSe with bucketing) \
                --seeds (how many seeds to generate, you should NOT use the "--input seeds" argument) \
                --parts (Apache Spark partitions)
    ```
@@ -93,7 +93,7 @@ Therefore DiNoiSe can be used only for social networks which define a mutual rel
    ```
    cat results_log.csv; cat seeds_log.csv
    ```
-   The results are in .csv form {name|time elapsed|coverage|accuracy|recall|F-score}
+   The results are in .csv form { graph_name, time elapsed, coverage, accuracy, recall, F1-score }
    
 </details>
 
