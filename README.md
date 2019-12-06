@@ -1,6 +1,12 @@
 ### Distributed NoisySeeds ###
 
-
+This is the PySpark distributed implementation of the NoisySeeds algorithm as described in our paper:
+<br/>
+``` 
+Charalampos Davalas, Dimitrios Michail, Iraklis Varlamis, Graph matching on social networks without any side information
+(IEEE BigData 2019)(accepted)
+```
+<br/>
 
 A map-reduce implementation of the NoisySeeds algorithm as described in the paper of kazemi et al. "Growing a graph from a handful 
 of seeds". The Distributed NoisySeeds (DiNoiSe) algorithm works upon a cluster of commodity hardware algorithm whilst following 
@@ -10,17 +16,7 @@ An addition to this implementation is an experimental seed generation algorithm 
 side information named SeedGenerator (SeGen) algorithm. SeGen is an adaptation to the Weisfeiler-Lehman graph isomorphism 
 1-dimensional test for graphs (also known as Naive Vertex Refinement).
 
-For a more detailed description please read our paper:
 
-<br/>
-
-``` 
-Graph matching on social networks without any side information
-
-Charalampos Davalas, Dimitrios Michail, Iraklis Varlamis.
-```
-
-<br/>
 
 
 ### Background ###
