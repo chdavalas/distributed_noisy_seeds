@@ -3,8 +3,8 @@
 This is the PySpark distributed implementation of the NoisySeeds algorithm as described in our paper:
 <br/>
  
-Charalampos Davalas, Dimitrios Michail, Iraklis Varlamis, Graph matching on social networks without any side information
-(IEEE BigData 2019)(accepted)
+Charalampos Davalas, Dimitrios Michail, Iraklis Varlamis, **Graph matching on social networks without any side information
+(IEEE BigData 2019)**(accepted)
 
 <br/>
 
