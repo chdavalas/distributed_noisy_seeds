@@ -8,7 +8,7 @@ Charalampos Davalas, Dimitrios Michail, Iraklis Varlamis, **Graph matching on so
 
 <br/>
 
-A map-reduce implementation of the NoisySeeds algorithm as described in the paper of kazemi et al. "Growing a graph from a handful 
+DiNoiSe is a map-reduce implementation of the NoisySeeds algorithm as described in the paper of kazemi et al. "Growing a graph from a handful 
 of seeds". The Distributed NoisySeeds (DiNoiSe) algorithm works upon a cluster of commodity hardware algorithm whilst following 
 the same logic as the original NoisySeeds algorithm. This implementation is written in PySpark (Python API for Apache Spark).
 
