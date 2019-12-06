@@ -1,4 +1,4 @@
-### Distributed NoisySeeds (DiNoiSe)###
+### Distributed NoisySeeds (DiNoiSe) ###
 
 This is the PySpark implementation of DiNoiSe algorithm as described in our paper:
 <br/>
