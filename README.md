@@ -100,7 +100,7 @@ Therefore DiNoiSe can be used only for social networks which define a mutual rel
 
 <details>
  <summary>Use DiNoiSe for finding matchings</summary>
-  <br/>
+
   * Run DiNoiSe
   ```
   spark-submit --master local[*] {dinoise.py OR dinoise_w_bucketing.py} \
