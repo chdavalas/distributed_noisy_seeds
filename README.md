@@ -13,8 +13,7 @@ of seeds". The Distributed NoisySeeds (DiNoiSe) algorithm works upon a cluster o
 the same logic as the original NoisySeeds algorithm. This implementation is written in PySpark (Python API for Apache Spark).
 
 An addition to this implementation is an experimental seed generation algorithm for the purpose of solving the problem of finding 
-side information named SeedGenerator (SeGen) algorithm. SeGen is an adaptation to the Weisfeiler-Lehman graph isomorphism 
-1-dimensional test for graphs (also known as Naive Vertex Refinement).
+side information named SeedGenerator (SeGen) algorithm. SeGen is an adaptation to the 1-dimensional Weisfeiler-Lehman graph isomorphism test for graphs (also known as Naive Vertex Refinement).
 
 
 
