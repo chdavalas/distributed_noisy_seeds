@@ -24,7 +24,6 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.'''
 
 
-
 import dinoise
 import dinoise_w_bucketing
 import argparse
@@ -40,23 +39,16 @@ def swap(pair):
     return (pair[1],pair[0])
 
 
-
-
 # Read edge list text file and map lines as key-value pairs 
 def line_to_edge(txtline):
     pair = txtline.split(' ')
     return (str(pair[0]),str(pair[1]))
 
 
-
-
 # Transform a shallow copy of a graph edgelist to a deep copy 
 def deep_copy(G,PARTS):
     return G.union(G.map(swap)).repartition(PARTS)\
             .persist(StorageLevel.DISK_ONLY)
-
-
-
 
 
 def evaluate_output(fname,G1,G2,res,save_filename,et,PARTS):
@@ -125,8 +117,6 @@ def evaluate_output(fname,G1,G2,res,save_filename,et,PARTS):
     return stats
 
 
-
-
 def main(args):
 
     sc = SparkContext(appName="PGM")
@@ -175,10 +165,6 @@ def main(args):
     stats=evaluate_output(graph_name+matchtype+IsBucket,G1,G2,res,"results_log.csv",ETB,PARTS)
 
     sc.stop()
-
-
-
-
 
 
 if __name__ == "__main__":
