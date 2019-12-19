@@ -1,5 +1,5 @@
 '''
-Copyright (c) 2019, chdavalas
+Copyright (c) 2019, chdavalas (chdavalas@gmail.com)
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -24,7 +24,6 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.'''
 
 
-
 import argparse
 import subprocess
 from os import system
@@ -40,17 +39,9 @@ from pyspark.serializers import MarshalSerializer
 from scipy.optimize import linear_sum_assignment 
 
 
-
-
-
-
 # Swap key-value pairs (k,v)->(v,k)
 def swap(pair):
     return (pair[1],pair[0])
-
-
-
-
 
 
 # Read edge list text file and map lines as key-value pairs 
@@ -59,37 +50,22 @@ def line_to_edge(txtline):
     return (str(pair[0]),str(pair[1]))
 
 
-
-
-
-
-
 # Transform a shallow copy of a graph edgelist to a deep copy 
 def deep_copy(G,PARTS):
     return G.union(G.map(swap)).repartition(PARTS)\
             .persist(StorageLevel.DISK_ONLY)
 
 
-
-
-
 def set_left_node_as_key(pair):
     return (pair[0][0],(pair[0][1],pair[1]))
-
-
-
 
 
 def set_right_node_as_key(pair):
     return (pair[1][0],(pair[0],pair[1][1]))
 
 
-
-
 def set_pair_back(pair):
     return ((pair[1][0],pair[0]),pair[1][1])
-
-
 
 
 # Ensure that all pairs with common nodes
@@ -97,13 +73,11 @@ def set_pair_back(pair):
 def node_resolution(rdd,PARTS,choose_by_max=True):
 
     def keep_max(a,b):
-
         if   a[1]>b[1]: return a
         elif a[1]<b[1]: return b
         else          : return (max(a[0],b[0]),a[1])
 
     def keep_min(a,b): 
-    
         if   a[1]<b[1]: return a
         elif a[1]>b[1]: return b
         else          : return (max(a[0],b[0]),a[1])
@@ -113,7 +87,7 @@ def node_resolution(rdd,PARTS,choose_by_max=True):
     else:
         def choose_by(x,y):return keep_min(x,y)
 
-
+        
     return rdd.map(set_left_node_as_key)\
               .partitionBy(PARTS)\
               .reduceByKey(choose_by)\
@@ -123,21 +97,15 @@ def node_resolution(rdd,PARTS,choose_by_max=True):
               .map(set_pair_back)
 
 
-
-
 # Change pair format
 def encode_tuple(tup):
     return str(tup[0])+"<->"+str(tup[1])
-
-
 
 
 # Change pair format
 def decode_tuple(edge):
     e=edge.split("<->")
     return (e[0],e[1])
-
-
 
 
 # Manhattan distance
@@ -153,10 +121,6 @@ def metric(v1,v2):
 
     V1,V2 = set_equal_length(v1,v2)
     return sum([abs(i-j) for i,j in zip(V1,V2)])
-
-
-
-
 
 
 # SeGen
@@ -215,10 +179,6 @@ def seed_generator(sc,G1,G2,seed_num,PARTS,offset=0):
     seeds = sc.parallelize(S)
 
     return seeds
-
-
-
-
 
 
 # DiNoiSe_w_bucketing
@@ -333,9 +293,6 @@ def distributed_noisy_seeds(sc,G1,G2,seeds,PARTS,thres=2):
     return matching
 
 
-
-
-
 #+++ MAIN CLASS +++
 def main(args):
 
@@ -376,9 +333,6 @@ def main(args):
     print("DiNoiSe time :"+str(ETB)+" min\n")
     return [ETA,ETB]
     sc.stop()
-
-
-
 
 
 if __name__ == "__main__":
