@@ -1,5 +1,5 @@
 '''
-Copyright (c) 2019, chdavalas
+Copyright (c) 2019, chdavalas (chdavalas@gmail.com)
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
