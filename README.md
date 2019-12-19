@@ -4,18 +4,14 @@ This is the PySpark implementation of DiNoiSe algorithm as described in the pape
 <br/>
  
 **Charalampos Davalas, Dimitrios Michail, Iraklis Varlamis. Graph matching on social networks without any side information.
-In Proceedings of 2019 IEEE International Conference on Big Data, 2019**
+In Proceedings of IEEE International Conference on Big Data, 2019**
 
 <br/>
 
-DiNoiSe is a map-reduce implementation of the NoisySeeds algorithm as described in the paper of kazemi et al. "Growing a graph from a handful 
-of seeds". The Distributed NoisySeeds (DiNoiSe) algorithm works upon a cluster of commodity hardware algorithm whilst following 
+DiNoiSe is a map-reduce implementation of the NoisySeeds algorithm as described in the paper of [Kazemi et al. "Growing a graph from a handful of seeds"](https://doi.org/10.14778/2794367.2794371). The Distributed NoisySeeds (DiNoiSe) algorithm works upon a cluster of commodity hardware, whilst following 
 the same logic as the original NoisySeeds algorithm. This implementation is written in PySpark (Python API for Apache Spark).
 
-An addition to this implementation is an experimental seed generation algorithm for the purpose of solving the problem of finding 
-side information named SeedGenerator (SeGen) algorithm. SeGen is an adaptation to the 1-dimensional Weisfeiler-Lehman graph isomorphism test for graphs (also known as Naive Vertex Refinement).
-
-
+In addition, this implementation also includes an experimental seed generation algorithm, named SeGen, for the purpose of finding an initial subset of connections for the algorithm to kickstart. SeGen is an adaptation of the 1-dimensional Weisfeiler-Lehman graph isomorphism test (also known as Naive Vertex Refinement).
 
 
 ### Background ###
@@ -26,18 +22,7 @@ specifically, the algorithm can find shared users between two networks, which ha
 ![](ns_step.png)
 
 
-<br/>
 
-
-### Motivation ###
-* Graph data which represent social netowrks are massive therefore the computations required from percolation graph matching can become prohibitive even for contemporary hardware.
-
-* A PGM algorithm will require an initial set of pre-acquired connections (named seeds). The problem is that finding a priori 
-knowledge can be demanding and often requires the human factor. An automatic system for finding initial knowledge can eliminate all 
-possible difficulties.
-
-
-<br/>
 
 
 ### Instructions ###
@@ -58,9 +43,9 @@ Therefore DiNoiSe can be used only for social networks which define a mutual rel
   
   * ensure virtualenv has been installed `pip3 install virtualenv`<br/>
   
-  * create new python3 environment `which python3; virtualenv -p {my/python3/directory} {environment_name}`<br/>
+  * create new python3 environment `which python3; virtualenv -p my/python3/directory environment_name`<br/>
   
-  * activate environment `source {environment_name}/bin/activate`<br/>
+  * activate environment `source environment_name/bin/activate`<br/>
   
   * install suggested requirements and check if properly installed `pip3 install -r requirements.txt; pip3 freeze`<br/>
 
@@ -78,8 +63,8 @@ Therefore DiNoiSe can be used only for social networks which define a mutual rel
   
   ```
   spark-submit --master local[*] testing_script.py \
-               --input /test_data/{graph_name}/G1/{part-*.gz} /test_data/{graph_name}/G2/{part-*.gz} \
-               --input_seeds /test_data/{graph_name}/seeds/{*.gz} \
+               --input test_data/graph_name/G1/{part-*.gz} test_data/graph_name/G2/{part-*.gz} \
+               --input_seeds test_data/graph_name/seeds/{*.gz} \
                --bucketing (optional:use this flag if you want to use DiNoiSe with bucketing) \
                --seeds (how many seeds to generate, you should NOT use the "--input seeds" argument) \
                --parts (Apache Spark partitions)
@@ -98,10 +83,10 @@ Therefore DiNoiSe can be used only for social networks which define a mutual rel
 
   * Run DiNoiSe
   ```
-  spark-submit --master local[*] {dinoise.py OR dinoise_w_bucketing.py} \
-               --input {my/graph1/dir} {my/graph2/dir} \
-               --input_seeds {my/seeds/dir} \
-               --output_dir {my/output/dir}\
+  spark-submit --master local[*] dinoise.py (OR dinoise_w_bucketing.py) \
+               --input my/graph1/dir my/graph2/dir \
+               --input_seeds my/seeds/dir \
+               --output_dir my/output/dir\
                --seeds (how many seeds to generate, you should NOT use the "--input seeds" argument) \
                --parts (Apache Spark partitions)
    ```
@@ -116,7 +101,11 @@ Therefore DiNoiSe can be used only for social networks which define a mutual rel
    head my/output/dir/segen_seeds/part-*
    ```
    ```
-   head my/output/dir/{seeded_matching OR seedless_mathcing}/part-* 
+   head my/output/dir/seeded_matching/part-* 
+   ```
+   OR
+   ```
+   head my/output/dir/seedless_matching/part-* 
    ```
 </details>
 
@@ -126,10 +115,12 @@ Therefore DiNoiSe can be used only for social networks which define a mutual rel
 ### Citation ### 
 Thanks in advance for citing us :)
 ```
-@inproceedings{DMV_2019,
+@inproceedings{davalas2019,
    author={Davalas C. and Michail. D and Varlamis I.},
    year={2019},
+   booktitle={Proceedings of the 2019 IEEE International Conference on Big Data},
    title={Graph matching on social networks without any side information},
-   publisher={IEEE}
+   organization={IEEE}
 }
+
 ```
