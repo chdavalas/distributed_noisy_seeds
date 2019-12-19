@@ -1,10 +1,10 @@
 ### Distributed NoisySeeds (DiNoiSe) ###
 
-This is the PySpark implementation of DiNoiSe algorithm as described in our paper:
+This is the PySpark implementation of DiNoiSe algorithm as described in the paper:
 <br/>
  
-Charalampos Davalas, Dimitrios Michail, Iraklis Varlamis, **Graph matching on social networks without any side information
-(IEEE BigData 2019)**(accepted)
+**Charalampos Davalas, Dimitrios Michail, Iraklis Varlamis. Graph matching on social networks without any side information.
+In Proceedings of 2019 IEEE International Conference on Big Data, 2019**
 
 <br/>
 
