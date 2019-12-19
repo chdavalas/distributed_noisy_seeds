@@ -126,5 +126,10 @@ Therefore DiNoiSe can be used only for social networks which define a mutual rel
 ### Citation ### 
 Thanks in advance for citing us :)
 ```
---Forthcoming--
+@inproceedings{DMV_2019,
+   author={Davalas C. and Michail. D and Varlamis I.},
+   year={2019},
+   title={Graph matching on social networks without any side information},
+   publisher={IEEE}
+}
 ```
