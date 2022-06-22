@@ -1,3 +1,4 @@
+#numpy=1.17
 numpy
 py4j==0.10.7
 #pyspark==2.3.3
